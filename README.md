@@ -24,8 +24,7 @@ Bu durum literatürde **hallucination** problemi olarak adlandırılır.
 
 ---
 
-## Proje Çözümü (Yaklaşım)
-
+## Proje Çözümü 
 Bu problem, **Retrieval-Augmented Generation (RAG)** yaklaşımı kullanılarak ele alınmıştır.
 
 RAG yaklaşımında dil modeli:
