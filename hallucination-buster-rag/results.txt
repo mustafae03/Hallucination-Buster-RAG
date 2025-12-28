@@ -1,0 +1,806 @@
+﻿
+Running mini benchmark...
+
+[1/10] RAG nedir ve halüsinasyonu nasıl azaltır?
+  RAG OFF Answer: RAG (Rektal Analjezik) bir ilaç grubu olarak tanımlanır. RAG ilaçları, rektal (anal) yolla usedilen ilaçlar olup, koltukaltı ve kolonun altını saran dokuların ağrısını azaltmak için kullanılır.
+
+RAG ilaçları, rektal kanama, kolonik enfeksiyon, divertikül, prostat hiperplazisi gibi hastalıklarda usedilir. RAG ilaçlarının en yaygın usesi, koltukaltı ve kolonun altını saran dokuların ağrısını azaltmak için usedilmesidır.
+
+RAG ilaçları, rektal kanama, divertikül, prostat hiperplazisi gibi hastalıklarda usedilir. RAG ilaçlarının en yaygın usesi, koltukaltı ve kolonun altını saran dokuların ağrısını azaltmak için usedilmesidır.
+
+RAG ilaçları, rektal kanama, divertikül, prostat hiperplazisi gibi hastalıklarda usedilir. RAG ilaçlarının en yaygın usesi, koltukaltı ve kolonun altını saran dokuların ağrısını azaltmak için usedilmesidır.
+
+RAG ilaçları, rektal kanama, divertikül, prostat hiperplazisi gibi hastalıklarda usedilir. RAG ilaçlarının en yaygın usesi, koltukaltı ve kolonun altını saran dokuların ağrısını azaltmak için usedilmesidır.
+
+RAG ilaçları, rektal kanama, divertikül, prostat hiperplazisi gibi hastalıklarda usedilir. RAG ilaçlarının en yaygın usesi, koltukaltı ve kolonun altını saran dokuların ağrısını azaltmak için usedilmesidır.
+
+RAG ilaçları, rektal kanama, divertikül, prostat hiperplazisi gibi hastalıklarda usedilir. RAG ilaçlarının en yaygın usesi, koltukaltı ve kolonun altını saran dokuların ağrısını azaltmak için usedilmesidır.
+
+RAG ilaçları, rektal kanama, divertikül, prostat hiperplazisi gibi hastalıklarda usedilir. RAG ilaçlarının en yaygın usesi, koltukaltı ve kolonun altını saran dokuların ağrısını azaltmak için usedilmesidır.
+
+RAG ilaçları, rektal kanama, divertikül, prostat hiperplazisi gibi hastalıklarda usedilir. RAG ilaçlarının en yaygın usesi, koltukaltı ve kolonun altını saran dokuların ağrısını azaltmak için usedilmesidır.
+
+RAG ilaçları, rektal kanama, divertikül, prostat hiperplazisi gibi hastalıklarda usedilir. RAG ilaçlarının en yaygın usesi, koltukaltı ve kolonun altını saran dokuların ağrısını azaltmak için usedilmesidır.
+
+RAG ilaçları, rektal kanama, divertikül, prostat hiperplazisi gibi hastalıklarda usedilir. RAG ilaçlarının en yaygın usesi, koltukaltı ve kolonun altını saran dokuların ağrısını azaltmak için used
+  RAG OFF Context Coverage: 23.08%
+  RAG ON Answer: RAG (Retrieval-Augmented Generation) yöntemi, halüsinasyon problemini önemli ölçüde azaltmaya yardımcı olur. Bu yöntemde, dil modeli tek başına çalışmaz; bunun yerine harici bir doküman koleksiyonundan ilgili bilgileri çekerek cevap üretir.
+
+RAG yaklaşımında, four fundamental steps'den oluşur:
+
+1. Dokümanlar daha küçük parçalara (chunk) bölünür.
+2. Her bir parça embedding modelleri kullanılarak sayısal vektörlere dönüştürülür.
+3. Elde edilen vektörler vektör tabanlı bir veritabanında saklanır.
+4. Kullanıcıdan gelen soru embedding'e dönüştürülür ve veritabanında en benzer doküman parçaları bulunur.
+
+Bu yaklaşım, dil modelinin yalnızca kendi parametrelerine değil, aynı zamanda dış bilgi kaynaklarına da dayanır. Bu nedenle, RAG yöntemi halüsinasyon problemini önemli ölçüde azaltmasına rağmen, tek başına yeterli olmayabilir. Model, getirilen dokümanlara yalnızca kısmen dayanan veya bağlam dışı ek bilgiler içeren cevaplar üretebilir.
+
+Kaynaklar:
+
+[KAYNAK 1 | notes1.txt | score=0.573]
+RAG tabanlı bir sistemin üzerine bir “kanıt skoru” (evidence score) mekanizması eklenmiştir. Bu mekanizma, dil modelinin ürettiği cevabı, kullanılan bağlam ile karşılaştırarak cevabın ne ölçüde desteklendiğini değerlendirmektedir.
+
+[KAYNAK 2 | notes1.txt | score=0.478]
+RAG yaklaşımında, dokümanlar daha küçük parçalara (chunk) bölünür. Bu işlem, daha hassas ve doğru bilgi getirme (retrieval) yapılabilmesini sağlar. İkinci adımda, her bir parça embedding modelleri kullanılarak sayısal vektörlere dönüştürülür.
+
+[KAYNAK 3 | notes1.txt | score=0.437]
+RAG yöntemi, halüsinasyon problemini önemli ölçüde azaltmaya yardımcı olur. Bu yöntemde, dil modeli tek başına çalışmaz; bunun yerine harici bir doküman koleksiyonundan ilgili bilgileri çekerek cevap üretir.
+  RAG ON Context Coverage: 83.82%
+  Top Sources: ['notes1.txt', 'notes1.txt', 'notes1.txt']
+  Time taken: 31.12 seconds
+
+[2/10] Embedding nedir? Neden vektöre çeviriyoruz?
+  RAG OFF Answer: Embedding, bir veri seti ile ilgili olarak daha yüksek boyutlu ve daha yüksek dimensionaliteye sahip bir espaçoye maplemektir. Bu espacio, veri setinin öznelliklerini ve ilişkilerini daha iyi bir şekilde temsil eder.
+
+Vektörle çevirme (veya vektörel transformasyon), bir veri setini daha yüksek dimensionaliteye sahip bir espaçoye maplemek için kullanılan bir yöntemdir. Bu yöntemin amacı, veri setinin öznelliklerini ve ilişkilerini daha iyi bir şekilde temsil etmek ve daha iyi bir şekilde sınıflandırma veya klasifikasyon yapmaktır.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan bir yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analiz etmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analiz etmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+- Öznellik analizi
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma: Veri setini sınıflandırmak için.
+- Klasifikasyon: Veri setini sınıflandırmak ve belirli bir sınıfı seçmek için.
+- Öznellik analizi: Veri setinin öznelliklerini analizmek için.
+
+Vektörle çevirme, genellikle bu tür problemas için kullanılan yöntemdir:
+
+- Sınıflandırma
+- Klasifikasyon
+-
+  RAG OFF Context Coverage: 31.37%
+  RAG ON Answer: Embedding, bir metnin veya wordsın, daha yüksek seviyede anlamlı informationları temsil eden saydalı (vektör) formuna dönüştürülmesidir. Bu processin amacı, metinlerin anlamsal içeriğini daha hassas ve doğru bir şekilde representation etmesini sağlamaktır.
+
+Vektöre çeviriyoruz çünkü bu, RAG yaklaşımının temel adımlarından biridir. Her bir parça embedding modelleri kullanılarak sayısal vektörler oluşturularak, daha hassas ve doğru bilgi getirme yapılabilmesi için dokümanlar daha küçük parçalara (chunk) bölünür.
+
+KAYNAK 1: "İkinci adımda, her bir parça embedding modelleri kullanılarak sayısal vektörlere dönüştürülür. Bu vektörler, metinlerin anlamsal içeriğini temsil eder."
+
+KAYNAK 2: "İkinci adımda, her bir parça embedding modelleri kullanılarak sayısal vektörlere dönüştürülür. Bu vektörler, metinlerin anlamsal içeriğini representation etmesinde yardımcı olur."
+
+KAYNAK 3: "İkinci adımda, her bir parça embedding modelleri kullanılarak sayısal vektörlere dönüştürülür. Bu vektörler, metinlerin anlamsal içeriğini temsil eder ve bu, RAG yaklaşımının temel adımlarından biridir."
+  RAG ON Context Coverage: 54.55%
+  Top Sources: ['notes1.txt', 'notes1.txt', 'notes1.txt']
+  Time taken: 82.58 seconds
+
+[3/10] FAISS ne işe yarar?
+  RAG OFF Answer: FAISS (Facebook AI Similarity Search), Facebook tarafından geliştirilen bir arama motoru ve veri işleme algoritmasıdır. FAISS, büyük ölçekli veri setlerini hızlı ve verimli bir şekilde arama ve sınıflandırma yapabilen bir platform sunar.
+
+FAISS'nin temel amacı, büyük ölçekli veri setlerinin sınıflandırılması ve aranması için optimal bir solution sunmaktır. Bu, veri analizi, makine öğrenimi, görsel processing gibi çeşitli alanlarda önemli bir gelişme olarak kabul edilir.
+
+FAISS'nin bazı önemli özelliklerini aşağıdaki listede bulabilirsiniz:
+
+1. **Hızlı Arama**: FAISS, büyük ölçekli veri setlerinin hızlı ve verimli bir şekilde aranabilmesi için tasarlanmıştır.
+2. **Veri Sınıflandırması**: FAISS, veri sınıflandırması için optimal bir solution sunar, bu da veri analizi ve makine öğrenimi gibi alanlarda önemli bir gelişme olarak kabul edilir.
+3. **Görsel Processing**: FAISS, görsel processing için de optimal bir solution sunar, bu da görsel veri analizi ve makine öğrenimi gibi alanlarda önemli bir gelişme olarak kabul edilir.
+4. **Veri Yönetimi**: FAISS, büyük ölçekli veri setlerinin yönetilmesini kolaylaştırır, bu da veri analizi ve makine öğrenimi gibi alanlarda önemli bir gelişme olarak kabul edilir.
+
+FAISS'nin bazı örnek uygulamaları aşağıdaki listede bulabilirsiniz:
+
+1. **Görsel Arama**: FAISS, görsel veri setlerini hızlı ve verimli bir şekilde arama yapabilen bir platform sunar.
+2. **Veri Sınıflandırması**: FAISS, veri sınıflandırması için optimal bir solution sunar, bu da veri analizi ve makine öğrenimi gibi alanlarda önemli bir gelişme olarak kabul edilir.
+3. **Görsel Processing**: FAISS, görsel processing için de optimal bir solution sunar, bu da görsel veri analizi ve makine öğrenimi gibi alanlarda importante bir gelişme olarak kabul edilir.
+
+FAISS'nin bazı avantajları aşağıdaki listede bulabilirsiniz:
+
+1. **Hızlı Arama**: FAISS, büyük ölçekli veri setlerinin hızlı ve verimli bir şekilde aranabilmesi için tasarlanmıştır.
+2. **Veri Sınıflandırması**: FAISS, veri sınıflandırması için optimal bir solution sunar, bu da veri analizi ve makine öğrenimi gibi alanlarda önemli bir gelişme olarak kabul edilir.
+3. **Görsel Processing**: FAISS, görsel processing için de optimal bir solution sunar, bu da görsel veri analizi ve makine öğrenimi gibi alanlarda importante bir gelişme olarak kabul edilir.
+
+FAISS'nin bazı dezavantajları aşağıdaki listede bulabilirsiniz:
+
+1. **Hızlı Arama**: FAISS, büyük ölçekli veri setlerinin hızlı ve verimli bir şekilde aranabilmesi için tasarlanmıştır, ancak bu da daha fazla bellek gerektirir.
+2. **Veri Sınıflandırması**: FAISS, veri sınıflandırması için optimal bir solution sunar, ancak bu da daha fazla computation gerektirir.
+3. **Görsel Processing**: FAISS, görsel processing için de optimal bir solution sunar, ancak bu da daha fazla bellek gerektirir.
+
+Genel olarak, FAISS, büyük ölçekli veri setlerinin hızlı ve verimli bir şekilde arama ve sınıflandırılması için optimal bir solution sunar. FAISS'nin avantajları ve dezavantajları, çeşitli alanlarda önemli bir gelişme olarak kabul edilir.
+  RAG OFF Context Coverage: 23.38%
+  RAG ON Answer: FAISS (Fused Arithmetic and Quantization Inverted Search), vektör tabanlı veritabanları oluşturmak ve hızlı arama yapmak için kullanılan bir algoritmadır. FAISS, RAG (Retrieval-Augmented Generation) yaklaşımının bir parçası olarak kullanılmaktadır.
+
+RAG yaklaşımı, dil modelinin tek başına çalışmasını yerine, harici bir doküman koleksiyonundan bilgileri çekerek cevap üretmesini amaçlamaktadır. Bu approach, modelin yalnızca kendi parametrelerine değil, aynı zamanda dış bilgi kaynaklarına da dayanır.
+
+FAISS, vektör tabanlı veritabanları oluşturmak ve hızlı arama yapmak için kullanılan bir algoritmadır. FAISS, RAG yaklaşımının bir parçası olarak kullanılmaktadır.
+
+KAYNAKlar:
+[KAYNAK 1 | notes1.txt | score=0.292]
+FAISS, vektör tabanlı veritabanları oluşturmak ve hızlı arama yapmak için kullanılan bir algoritmadır. FAISS, RAG yaklaşımının bir parçası olarak kullanılmaktadır.
+
+[KAYNAK 2 | notes1.txt | score=0.225]
+RAG yaklaşımı, dil modelinin tek başına çalışmasını yerine, harici bir doküman koleksiyonundan bilgileri çekerek cevap üretmesini amaçlamaktadır. Bu approach, modelin yalnızca kendi parametrelerine değil, aynı zamanda dış bilgi kaynaklarına da dayanır.
+
+[KAYNAK 3 | notes1.txt | score=0.218]
+Halüsinasyon problemi, büyük Dil Modelleri (Large Language Models – LLM’ler) tarafından üretilen çıktılar için bir sorunudur. FAISS, bu problemi azaltmak amacıyla geliştirilmiştir.
+  RAG ON Context Coverage: 64.29%
+  Top Sources: ['notes1.txt', 'notes1.txt', 'notes1.txt']
+  Time taken: 25.12 seconds
+
+[4/10] Chunking neden gerekli? Chunk size yanlış olursa ne olur?
+  RAG OFF Answer: Chunking, veri veya bilgiyi daha küçük bileşenler (chunk) olarak parçalamanın bir yöntemidir. Bu yöntemle, büyük miktarda veri veya bilgiyi daha kolay anlama ve işleme için daha küçük bileşenler oluşturulabilir.
+
+Chunking neden gerekli?
+
+1. **Veri işleme kolaylığı**: Büyük miktarda veri veya bilgiyi işlemek zordur. Chunking, bu verileri daha nhỏ ve daha kolay işlenebilen bileşenler olarak parçalamanın possible olduğunu sağlar.
+2. **Anlama kolaylığı**: Büyük miktarda bilgiyi anlama zorluğu var. Chunking, bu bilgiyi daha küçük bileşenler olarak parçalamanın anlama kolaylığını sağlar.
+3. **Hafızayı azaltma**: Büyük miktarda bilgiyi hafızaya saklamak zordur. Chunking, bu bilgiyi daha nhỏ ve daha kolay hafızaya saklanabilen bileşenler olarak parçalamanın hafızayı azaltmasını sağlar.
+
+Chunk size yanlış olursa ne olur?
+
+1. **Veri işleme zorluğu**: Chunk size değişikliği zamanında veya geç saatlerde yapılırsa, veri işleme kolaylığı azalabilir.
+2. **Anlama zorluğu**: Chunk size değişikliği zamanında veya geç saatlerde yapılırsa, anlama kolaylığı azalabilir.
+3. **Hafızayı etkileme**: Chunk size değişikliği zamanında veya geç saatlerde yapılırsa, hafızayı etkileme olasılığı artar.
+4. **Veri kaybı**: Chunk size değişikliği zamanında veya geç saatlerde yapılırsa, veri kaybına neden olabilir.
+
+Örneğin, bir web sitesinin sayfa sayısını 10'e indirdiğinizde, chunk size 1000 kelimeye indirdiğinizde, site kullanıcının daha kolay anlama ve işleme oluşturulabilir. Ancak, site kullanıcının sayfa sayısını 5'e indirdiğinizde, chunk size 2000 kelimeye indirdiğinizde, site kullanıcının daha kolay anlama ve işleme oluşturulabilir.
+
+Bu nedenle, chunk size değişikliği zamanında ve doğru şekilde yapılması önemlidir.
+  RAG OFF Context Coverage: 27.71%
+  RAG ON Answer: Chunking, bilgiyi daha hassas ve doğru şekilde getirme yeteneği olarak tanımlanabilir. Chunking, dokümanları daha küçük parçalara (chunk) bölünerek, daha hassas ve doğru bilgi getirme yeteneğini sağlar.
+
+Chunk size yanlış olursa, information retrieval processunda hatalar ve eksiklikler ortaya çıkabilir. Chunk size değişikliği, metinlerin anlamsal içeriğini temsil eden vektörler arasındaki ilişkiyi etkileyebilir. Değişik chunk size ileliktiğinde, model, daha küçük veya daha büyük chunk'lere attention vererek, information retrieval processunda hatalar ve eksiklikler ortaya çıkabilir.
+
+Örneğin, chunk size quá small ise, model, metinlerin anlamsal içeriğini temsil eden vektörler arasındaki ilişkiyi çok fazla etkileyebilir. Bu da, information retrieval processında hatalar ve eksiklikler ortaya çıkabilir. Öte yandan, chunk size quá large ise, model, metinlerin anlamsal içeriğini temsil eden vektörler arasındaki ilişkiyi çok az etkileyebilir. Bu da, information retrieval processinda daha iyi sonuçlar elde edilememizi sağlar.
+
+KAYNAK 1: Chunking, dokümanları daha küçük parçalara (chunk) bölünerek, daha hassas ve doğru bilgi getirme yeteneğini sağlar. Bu işlem, information retrieval processında hatalar ve eksiklikler ortaya çıkarmaz.
+
+KAYNAK 2: Chunk size değişikliği, metinlerin anlamsal içeriğini temsil eden vektörler arasındaki ilişkiyi etkileyebilir. Değişik chunk size ileliktiğinde, model, daha küçük veya daha büyük chunk'lere attention vererek, information retrieval processında hatalar ve eksiklikler ortaya çıkabilir.
+
+KAYNAK 3: Chunking, dokümanları daha küçük parçalara (chunk) bölünerek, daha hassas ve doğru bilgi getirme yeteneğini sağlar. Bu işlem, information retrieval processinda hatalar ve eksiklikler ortaya çıkarmaz.
+  RAG ON Context Coverage: 39.44%
+  Top Sources: ['notes1.txt', 'notes1.txt', 'notes1.txt']
+  Time taken: 22.31 seconds
+
+[5/10] RAG ile arama (retrieval) adımı neden kritik?
+  RAG OFF Answer: RAG (Retrieval Adımı) adımda, arama motoru tarafından aranan veri seti ile ilgili bilgi toplanması ve bu bilgiyi kullanmak için gerekli önlemler alınması önemlidir. Bu adım, arama motorunun aramanın sonuçlarını nasıl göstereceği ve ne şekilde sonuçları sıralayacağına etkileyen kritik bir adım olarak kabul edilir.
+
+RAG adımda kritik olan nedenler:
+
+1. **Veri Seti**: RAG adımda, arama motoru tarafından aranan veri seti önemlidir. Bu veri seti, aramanın sonuçlarını nasıl göstereceği ve ne şekilde sonuçları sıralayacağına etkileyen bir faktör olarak kabul edilir.
+2. **Indexing**: RAG adımda, arama motoru tarafından indexleme processi önemlidir. Indexleme, aranan verilerin bir listede saklanmasını sağlar ve bu listeden aramanın sonuçlarını kolayca bulunmasını sağlar.
+3. **Sıralama Algoritmaları**: RAG adımda, arama motoru tarafından kullanılan sıralama algoritmileri önemlidir. Bu algoritmiler, aramanın sonuçlarını nasıl sıralanacağına etkileyen bir faktör olarak kabul edilir.
+4. **Dizinleme**: RAG adımda, arama motoru tarafından dizinleme processi önemlidir. Dizinleme, aranan verilerin bir listede saklanmasını sağlar ve bu listeden aramanın sonuçlarını kolayca bulunmasını sağlar.
+
+RAG adımda kritik olan nedenler:
+- Veri setinin kalitesi
+- Indexleme processinin kalitesi
+- Sıralama algoritmalarının kalitesi
+- Dizinleme processinin kalitesi
+
+Bu nedenlerden dolayı, RAG adımda kritik bir adım olarak kabul edilir ve bu adımın kalitesi, aramanın sonuçlarını nasıl göstereceği ve ne şekilde sonuçları sıralayacağına etkileyen bir faktör olarak kabul edilir.
+  RAG OFF Context Coverage: 22.86%
+  RAG ON Answer: RAG ile arama (retrieval) adımı kritik because it allows the model to draw upon external information sources in addition to its own parameters, which can help reduce the problem of halüsinasyon. By retrieving relevant information from a document collection and using it to generate responses, the model is able to produce more accurate and reliable answers.
+
+KAYNAK 1: Bu yaklaşım, LLM tabanlı sistemlerde halüsinasyon problemini önemli ölçüde azaltır ve dokümana dayalı, daha güvenli ve şeffaf bir cevap üretim süreci sunar.
+KAYNAK 2: RAG yaklaşımı, dil modelinin tek başına çalışmasını değil, harici bir doküman koleksiyonundan bilgi çekerek cevap üretmesini içerir. Bu, modelin yalnızca kendi parametrelerine değil, aynı zamanda dış bilgi kaynaklarına da dayanmasına olanak tanır.
+KAYNAK 3: RAG yöntemi, halüsinasyon problemini azaltmak amacıyla geliştirilmiştir ve bu yaklaşım, LLM tabanlı sistemlerde daha accurate ve reliable cevaplar üretmesini sağlar.
+  RAG ON Context Coverage: 46.60%
+  Top Sources: ['notes1.txt', 'notes1.txt', 'notes1.txt']
+  Time taken: 17.90 seconds
+
+[6/10] Cosine similarity neyi ölçer? Normalize embeddings niye var?
+  RAG OFF Answer: Cosine Similarity:
+
+Cosine similarite, iki vectorinin dot product'unu ile normalleri'nin çarpımı olarak tanımlanır. Bu, iki vectorin arasındaki ilişkiyi measure eder.
+
+Formülasyon: 
+
+cos(θ) = (x · y) / (||x|| * ||y||)
+
+Burada:
+
+- x ve y, iki vectors
+- θ, iki vectorsin arasında olan açıyla denir
+- x · y, iki vectorsin dot product'u
+- ||x|| ve ||y||, iki vectorsin normalleri
+
+Normalize Etkinlikleri (Normalized Embeddings):
+
+Normalize etiketler, bir modelin geliştirildiği veri setindeki data pointsın normalde nasıl beingeleştiğini gösterir. Bu, modelin veri setindeki data pointsın normalde nasıl beingeleştiğini gösterir.
+
+Normalize etiketler, genellikle 0 ve 1 aralığında olmalıdır. Normalize etiketler, bir modelin geliştirildiği veri setindeki data pointsın normalde nasıl beingeleştiğini gösterir.
+
+Örneğin, bir modelin geliştirildiği veri setinde data pointsın normalde nasıl beingeleştiğini gösterirsek, bu data pointsın normalde nasıl beingeleştiğini gösterir. Normalize etiketler, bir modelin geliştirildiği veri setindeki data pointsın normalde nasıl beingeleştiğini gösterir.
+
+Normalize etiketler, genellikle 0 ve 1 aralığında olmalıdır.
+  RAG OFF Context Coverage: 15.52%
+  RAG ON Answer: Cosine similarity, metinlerin anlamsal benzerliğini ölçmek için kullanılan bir matematiksel yöntemdir. Normalize embeddings, metinlerin anlamsal contenidoını daha iyi temsil etmek için usedilen bir tekniktedir.
+
+Cosine similarity, iki vektör arasındaki similariteyi measurement için kullanılır. Vektörler, metinlerin sayısal representationları olarak kabul edilir ve bu representationlar, metinlerin anlamsal contentini temsil eder. Cosine similarity, vektörlere olan similaritenin büyüklüğünü measurement yapar.
+
+Normalize embeddings, metinlerin anlamsal contenidoını daha iyi temsil etmek için used edilen bir technique'dir. Normalize embeddings, metinlerin sayısal representationlarını normalize eder ve bu normalization, metinlerin anlamsal contentini daha iyi temsil etmesini sağlar.
+
+RAG yaklaşımında, dil modeli tek başına çalışmaz; bunun yerine harici bir doküman koleksiyonundan ilgili bilgileri çekerek cevap üretir. Bu approach, modelin yalnızca kendi parametrelerine değil, aynı zamanda dış bilgi kaynaklarına da dayanır.
+  RAG ON Context Coverage: 60.00%
+  Top Sources: ['notes1.txt', 'notes1.txt', 'notes1.txt']
+  Time taken: 16.65 seconds
+
+[7/10] Top-k neden 3 seçilir? 10 yapsak ne değişir?
+  RAG OFF Answer: Top-k neden 3 seçilir?
+
+Top-k, bir listeyi sıralamak için kullanılan bir algoritmadır. Top-k, en yüksek değerleri ilk three olarak seçmek için kullanılır. Bu nedenle, top-k neden 3 seçilir?
+
+1. **Sınırlı kaynaklar**: Listede yer alan her elementin aynı derecede önem taşıyabileceği durumlar genellikle sınırlı kaynaklar (örneğin, para, zaman vb.) ile karşılaşılmaktadır. Bu nedenle, en yüksek değerleri ilk three olarak seçmek, daha fazla kaynakın verilmesini sağlar.
+2. **Priorite**: Top-k, prioriteringi içerir. Listede yer alan her elementin aynı derecede önem taşıyabileceği durumlar genellikle sınırlı kaynaklar ve prioritering ile karşılaşılmaktadır. Bu nedenle, en yüksek değerleri ilk three olarak seçmek, daha fazla priorite verilmesini sağlar.
+3. **Simplifikleme**: Top-k, listeyi simplifying eder. Listede yer alan her elementin aynı derecede önem taşıyabileceği durumlar genellikle sınıflandırma ve simplification ile karşılaşılmaktadır. Bu nedenle, en yüksek değerleri ilk three olarak seçmek, daha fazla simplification sağlar.
+
+10 yapsak ne değişir?
+
+Top-k, 10 yaprak gibi bir listede de kullanılabilir. Ancak, bu durumda listede yer alan her elementin aynı derecede önem taşıyabileceği durumlar genellikle sınırlı kaynaklar ve prioritering ile karşılaşılmaktadır.
+
+Bu nedenle, top-k, 10 yaprak gibi bir listede de:
+
+1. **Sınırlı kaynaklar**: Listede yer alan her elementin aynı derecede önem taşıyabileceği durumlar genellikle sınırlı kaynaklar ile karşılaşılmaktadır.
+2. **Priorite**: Top-k, prioriteringi içerir. Listede yer alan her elementin aynı derecede önem taşıyabileceği durumlar genellikle sınıflandırma ve prioritering ile karşılaşılmaktadır.
+3. **Simplifikleme**: Top-k, listeyi simplifying eder. Listede yer alan her elementin aynı derecede önem taşıyabileceği durumlar genellikle sınıflandırma ve simplification ile karşılaşılmaktadır.
+
+Bu nedenle, top-k, 10 yaprak gibi bir listede de same şekilde kullanılabilir.
+  RAG OFF Context Coverage: 27.54%
+  RAG ON Answer: Top-k neden 3 seçilir? 10 yapsak ne değişir?
+
+Top-K selectionu, bir arama sonuçının en iyi 3 resultinin gösterilmesini içerir. Bu selection, aramanın amacını ve hedefini belirleyen bir kriterdir. Top-K selectionu, aramanın amacını ve hedefini belirleyen bir kriterdir.
+
+10 yapsak ne değişir?
+
+Top-K selectionu, aramanın amacını ve hedefini belirleyen bir kriterdir. Bu nedenle, 10 yaptığımızda veya 3 yaptığımızda ne değişir? Top-K selectionu, aramanın amacını ve hedefini belirleyen bir kriterdir. Bu nedenle, 10 yaptığımızda veya 3 yaptığımızda ne değişir?
+
+Top-K selectionu, aramanın amacını ve hedefini belirleyen bir kriterdir. Bu nedenle, 10 yaptığımızda veya 3 yaptığımızda ne değişir? Top-K selectionu, aramanın amacını ve hedefini belirleyen bir kriterdir.
+
+KAYNAK 1:
+Top-K selectionu, aramanın amacını ve hedefini belirleyen bir kriterdir. Bu nedenle, 10 yaptığımızda veya 3 yaptığımızda ne değişir? Top-K selectionu, aramanın amacını ve hedefini belirleyen bir kriterdir.
+
+KAYNAK 2:
+Top-K selectionu, aramanın amacını ve hedefini belirleyen bir kriterdir. Bu nedenle, 10 yaptığımızda veya 3 yaptığımızda ne değişir? Top-K selectionu, aramanın amacını ve hedefini belirleyen bir kriterdir.
+
+KAYNAK 3:
+Top-K selectionu, aramanın amacını ve hedefini belirleyen bir kriterdir. Bu nedenle, 10 yaptığımızda veya 3 yaptığımızda ne değişir? Top-K selectionu, aramanın amacını ve hedefini belirleyen bir kriterdir.
+  RAG ON Context Coverage: 25.00%
+  Top Sources: ['notes1.txt', 'notes1.txt', 'notes1.txt']
+  Time taken: 22.25 seconds
+
+[8/10] RAG olmadan LLM neden halüsinasyon yapar?
+  RAG OFF Answer: RAG (Recurrent Active Generator) modelleri, halüsinasyon gibi kompleks mental durumlar için modelleme ve analitik işlemlerde kullanılabilir. Halüsinasyon, bir bireyin gerçek bir olayın yerine getirdiği, ancak gerçek olayla ilgili olmayan, often fantastik veya gerçek olmayan görüntüler, sesler veya sensationsıdır.
+
+RAG modellerinin halüsinasyon yapması için birkaç neden vardır:
+
+1. **Kazanç Materyali**: RAG modelleri, büyük miktarda veri ve kazanç materyali ile entrenlenir. Bu materyal, modelin daha fazla data ve farklı durumları işleyebilmesini sağlar. Halüsinasyon gibi kompleks mental durumlar için bu materyalin daha fazla kullanılabilirliği vardır.
+2. **Dikkatli Olma**: RAG modelleri, dikkatli olmayı içerir. Bu, modelin daha fazla data ve farklı durumları işleyebilmesini sağlar. Halüsinasyon gibi kompleks mental durumlar için bu dikkatli olmanın daha fazla kullanılabilirliği vardır.
+3. **Sınırlı Bilgi**: RAG modelleri, sınırlı bilgiyi içerir. Bu, modelin daha fazla data ve farklı durumları işleyebilmesini sağlar. Halüsinasyon gibi kompleks mental durumlar için bu sınırlı bilgiye sahip olması daha fazla kullanılabilirliği vardır.
+4. **Yapay Zeka**: RAG modelleri, yapay zekayı içerir. Bu, modelin daha fazla data ve farklı durumları işleyebilmesini sağlar. Halüsinasyon gibi kompleks mental durumlar için bu yapay zekanın daha fazla kullanılabilirliği vardır.
+
+RAG modellerinin halüsinasyon yapması için daha fazla nghiênme ve geliştirme gerekebilir.
+  RAG OFF Context Coverage: 26.92%
+  RAG ON Answer: RAG olmadan LLM neden halüsinasyon yapar?
+
+Halüsinasyon, gerçekte var olmayan veya verilen bilgiye dayanmayan çıktılar üretme eğilimidir. Bu problemi azaltmak amacıyla geliştirilen en yaygın yaklaşımlardan biri Retrieval-Augmented Generation (RAG) yöntemidir.
+
+RAG yaklaşımında, dil modeli tek başına çalışmaz; bunun yerine harici bir doküman koleksiyonundan ilgili bilgileri çekerek cevap üretir. Bu şekilde, model, yalnızca kendi parametrelerine değil, aynı zamanda dış bilgi kaynaklarına da dayanır.
+
+Bu sistem genellikle dört temel adımdan oluşur:
+
+1. Dokümanlar daha küçük parçalara (chunk) bölünür.
+2. Her bir parça embedding modelleri kullanılarak sayısal vektörlere dönüştürülür.
+3. Elde edilen embedding’ler vektör tabanlı bir veritabanında saklanır.
+4. Kullanıcıdan gelen soru embedding’e dönüştürülür ve veritabanında en benzer doküman parçaları bulunur.
+
+Bu sistem, halüsinasyon problemini önemli ölçüde azaltmasına rağmen, tek başına yeterli olmayabilir. Model, getirilen dokümanlara yalnızca kısmen dayanan veya bağlam dışı ek bilgiler içeren cevaplar üretebilir. Bu nedenle, üretilen cevapların güvenilirliğini ölçmek için ek denetim mekanizmalarına ihtiyaç vardır.
+
+KAYNAK 1: notes1.txt | score=0.313
+KAYNAK 2: notes1.txt | score=0.301
+KAYNAK 3: notes1.txt | score=0.279
+  RAG ON Context Coverage: 88.06%
+  Top Sources: ['notes1.txt', 'notes1.txt', 'notes1.txt']
+  Time taken: 19.11 seconds
+
+[9/10] Vector database ile klasik keyword search farkı nedir?
+  RAG OFF Answer: Vector database ve klasik keyword search arasında önemli bir fark vardır. Bu fark, veri işleme yöntemleri ve arama sonuçları arasındaki farklılıklarla ilgilidır.
+
+Klasik keyword search, aranan kelime veya deyimi arayan bir kullanıcının arama sonuçlarını tìmamak için kullanılan bir yöntemdir. Bu yöntemde, aranan kelimenin presence'ini (varlığı) veya absence'sini (yokluğu) kontrol etmek için bir matematiksel model kullanılır. Bu model, aramanın sonuçları ile ilgili bir matematiksel tươnglide oluşturur.
+
+Vector database ise, veri ve arama sonuçlarını matematiksel olarak temsil eden bir veritabanıdır. Bu veritabanında, her veri ve arama sonuçının bir vektör (matematiksel bir değişken) olarak temsil edildiği için, bu yöntemde, aranan kelimenin presence'ini veya absence'sini kontrol etmek için bu vektörler arasındaki mesafeyi hesaplamak required olur.
+
+Bu fark, vector database ile klasik keyword search arasında aşağıdaki farklılıkları içerir:
+
+1. Matematiksel modelleme: Vector database, her veri ve arama sonuçının bir vektör olarak temsil edildiği için, matematiksel bir modelleme yöntemini kullanır. Klasik keyword search ise, aranan kelimenin presence'ini veya absence'sini kontrol etmek için bir matematiksel model kullanmaz.
+2. Arama sonuçları: Vector database, arama sonuçlarını vektörler olarak temsil ederken, klasik keyword search, arama sonuçlarını tek metin olarak temsil eder.
+3. Veri işleme: Vector database, veri ve arama sonuçlarını matematiksel olarak temsil etmek için bir veritabanı sağlar. Klasik keyword search ise, veri ve arama sonuçlarını matematiksel olarak temsil etmeden, direkt bir metin aramasını yapar.
+
+Bu farklar, vector database ile klasik keyword search arasındaki farklılıkları içerir ve bu yöntemlerin her biri farklı situations için daha uygun olabilir.
+  RAG OFF Context Coverage: 29.03%
+  RAG ON Answer: Vector database ile klasik keyword search arasındaki fark, vector database ile klasik keyword search arasındaki en önemli farkı oluşturur.
+
+Klasik keyword search yöntemi, kullanıcıdan gelen soruya göre keyword'leri arayan bir sistemdir. Bu sistem, kullanıcıdan gelen sorunun keyword'lerini bulduktan sonra, bu keyword'lere sahip olan dokümanları arar ve sonuçları listeler. Bu yöntem, keyword'lerin exact matchi için focus alır ve bu nedenle, keyword'ler ile ilgili dokümanlar arasında çok fazla overlap olabilir.
+
+Vector database ise, vector tabanlı bir veritabanıdır. Bu sistem, kullanıcıdan gelen soruyu, vector tabanlı bir veritabanına kaydeder ve bu veritabanında, soruya sahip olan dokümanları arar. Vector database, keyword'lerin exact matchi için focus almaz, aynı zamanda, keyword'ler ile ilgili dokümanlar arasında anlamsal benzerlik basedir.
+
+Bu nedenle, vector database ile klasik keyword search arasındaki fark, bu iki yöntemin farklı yaklaşımını oluşturur:
+
+- Klasik keyword search, keyword'lerin exact matchi için focus alır.
+- Vector database ise, keyword'ler ile ilgili dokümanlar arasında anlamsal benzerlik basedir.
+
+Bu fark, vector database ile klasik keyword search arasındaki en önemli farkı oluşturur ve bu nedenle, vector database daha iyi performansa neden olur.
+
+KAYNAK 1: Bu projede, RAG tabanlı bir sistemin üzerine bir “kanıt skoru” (evidence score) mekanizması eklenmiştir. Bu mekanizma, dil modelinin ürettiği cevabı, kullanılan bağlam ile karşılaştırarak cevabın ne ölçüde desteklendiğini değerlendirmektedir.
+
+KAYNAK 2: Vector database, keyword'lerin exact matchi için focus almaz, aynı zamanda, keyword'ler ile ilgili dokümanlar arasında anlamsal benzerlik basedir.
+  RAG ON Context Coverage: 44.44%
+  Top Sources: ['notes1.txt', 'notes1.txt', 'notes1.txt']
+  Time taken: 21.51 seconds
+
+[10/10] RAG sistemlerinde prompt neden kritiktir?
+  RAG OFF Answer: RAG (Reinforcement Learning from Human Feedback) sistemlerinde prompt, bir dizi önemli faktörün kombinasyonudur. İşte RAG sistemlerinde prompt neden kritiktir:
+
+1. **Veri Kalitesi**: Prompt, verilerin kalitesini etkiler. İyi bir prompt, verilerin daha iyi anlaşılabileceği ve daha accurate sonuçlar elde edilebileceği için önemlidir.
+2. **Anlam Yöntemi**: Prompt, veri analizi yöntemlerini etkiler. Bir dizi farklı analiz yöntemi kullanılabilir, ancak bazı yöntemler daha iyi sonuçlar verebilir.
+3. **Sistem Performansı**: Prompt, sistem performansı üzerinde önemli bir etkisi vardır. İyi bir prompt, sistem performanceını artırabilir ve sonuçları iyileştirir.
+4. **Veri Sınıflandırması**: Prompt, veri sınıflandırmasını etkiler. Bir dizi farklı sınıflandırma yöntemi kullanılabilir, ancak bazı yöntemler daha iyi sonuçlar verebilir.
+5. **Sistem Anlamlılığı**: Prompt, sistem analamlılığını etkiler. İyi bir prompt, sistem analamlılığını artırır ve sonuçları iyileştirir.
+
+RAG sistemlerinde prompt, aşağıdaki özelliklere sahip olmalıdır:
+
+* **Etkili**: Prompt, verilerin anlaşılabileceği ve sonuçlar elde edilebileceği için önemlidir.
+* **Sade**: Prompt, verilerin anlaşılabileceği ve sonuçlar elde edilebileceği için sade olmalıdır.
+* **Genel**: Prompt, verilerin anlaşılabileceği ve sonuçlar elde edilebileceği için genel olmalıdır.
+* **Anlamlı**: Prompt, verilerin anlaşılabileceği ve sonuçlar elde edilebeceği için anlamlı olmalıdır.
+
+RAG sistemlerinde prompt, aşağıdaki adımları takip edebilir:
+
+1. **Veri Analizi**: Verileri analiz edin ve veri sınıflandırmasını etkileyen faktörleri belirleyin.
+2. **Anlam Yöntemi Seçimi**: Analiz yöntemlerini seçin ve en iyi sonuçları elde edeceğiniz yöntemi seçin.
+3. **Sistem Performansı İyileştirme**: Sistem performansı iyileştirmek için promptu optimize edin.
+4. **Veri Sınıflandırması İyileştirme**: Veri sınıflandırmasını iyileştirmek için promptu optimize edin.
+5. **Sistem Analamlılığını Artırma**: Sistem analamlılığını artırmak için promptu optimize edin.
+
+RAG sistemlerinde prompt, önemli bir faktördür ve iyi bir prompt, sistem performanceını artırabilir ve sonuçları iyileştirir.
+  RAG OFF Context Coverage: 14.13%
+  RAG ON Answer: RAG sistemlerinde prompt kritiktir çünkü bu sistemlerde dil modelinin tek başına çalışmaması ve harici bir doküman koleksiyonundan bilgi çekerek cevap üretmesi gerektiği için, promptın doğru ve relevant olmasa, sistemin cevap verme yeteneği düşer. Prompt, modelin hangi bilgileri çekmelisiniz ve nasıl çekmelisiniz konusunda önemli bir rol oynar.
+
+RAG yaklaşımında, dil modeli tek başına çalışmaz; bunun yerine harici bir doküman koleksiyonundan ilgili bilgileri çekerek cevap üretir. Bu nedenle, promptın doğru ve relevant olmasa, sistemde halüsinasyon problemini azaltmak için geliştirilen RAG yönteminin etkisizleşmesi occurs.
+
+RAG yaklaşımında, dil modeli tek başına çalışmaz; bunun yerine harici bir doküman koleksiyonundan ilgili bilgileri çekerek cevap üretir. Bu nedenle, promptın doğru ve relevant olmasa, sistemde halüsinasyon problemini azaltmak için geliştirilen RAG yönteminin etkisizleşmesi occurs.
+
+RAG yaklaşımında, dil modeli tek başına çalışmaz; bunun yerine harici bir doküman koleksiyonundan ilgili bilgileri çekerek cevap üretir. Bu nedenle, promptın doğru ve relevant olmasa, sistemde halüsinasyon problemini azaltmak için geliştirilen RAG yönteminin etkisizleşmesi occurs.
+
+KAYNAK 1: Bu projede, RAG tabanlı bir sistemin üzerine bir “kanıt skoru” (evidence score) mekanizması eklenmiştir. Bu mekanizma, dil modelinin ürettiği cevabı, kullanılan bağlam ile karşılaştırarak cevabın ne ölçüde desteklendiğini değerlendirmektedir.
+
+KAYNAK 2: RAG yaklaşımı halüsinasyon problemini önemli ölçüde azaltmasına rağmen, tek başına yeterli olmayabilir. Model, getirilen dokümanlara yalnızca kısmen dayanan veya bağlam dışı ek bilgiler içeren cevaplar üretebilir. Bu nedenle, üretilen cevapların güvenilirliğini ölçmek için ek denetim mekanizmalarına ihtiyaç vardır.
+
+KAYNAK 3: RAG yaklaşımında, dil modeli tek başına çalışmaz; bunun yerine harici bir doküman koleksiyonundan ilgili bilgileri çekerek cevap üretir.
+  RAG ON Context Coverage: 74.77%
+  Top Sources: ['notes1.txt', 'notes1.txt', 'notes1.txt']
+  Time taken: 23.94 seconds
+

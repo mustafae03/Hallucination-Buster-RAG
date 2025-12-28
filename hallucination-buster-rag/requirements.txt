@@ -1,0 +1,9 @@
+faiss-cpu
+numpy
+sentence-transformers
+streamlit
+requests
+tqdm
+scikit-learn
+rapidfuzz
+

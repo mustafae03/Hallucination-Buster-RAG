@@ -1,0 +1,34 @@
+Büyük Dil Modelleri (Large Language Models – LLM’ler), doğal dil anlama ve üretme alanında son yıllarda büyük bir gelişme göstermiştir.
+Ancak bu modellerin en önemli problemlerinden biri, “halüsinasyon” olarak adlandırılan, gerçekte var olmayan veya verilen bilgiye dayanmayan çıktılar üretme eğilimidir.
+
+Halüsinasyon problemi özellikle akademik, teknik ve karar destek sistemlerinde ciddi riskler oluşturmaktadır.
+Bir LLM, eğitildiği veri kümesinde yer almayan veya güncel olmayan bir konu hakkında soru aldığında, cevabı tahmin yoluyla üretmekte ve bu da yanlış bilgiye yol açabilmektedir.
+Kullanıcı açısından bakıldığında, üretilen cevabın doğru mu yoksa uydurma mı olduğunu ayırt etmek oldukça zordur.
+
+Bu problemi azaltmak amacıyla geliştirilen en yaygın yaklaşımlardan biri Retrieval-Augmented Generation (RAG) yöntemidir.
+RAG yaklaşımında, dil modeli tek başına çalışmaz; bunun yerine harici bir doküman koleksiyonundan ilgili bilgileri çekerek cevap üretir.
+Böylece model, yalnızca kendi parametrelerine değil, aynı zamanda dış bilgi kaynaklarına da dayanır.
+
+Bir RAG sistemi genellikle dört temel adımdan oluşur.
+İlk olarak, dokümanlar daha küçük parçalara (chunk) bölünür.
+Bu işlem, daha hassas ve doğru bilgi getirme (retrieval) yapılabilmesini sağlar.
+İkinci adımda, her bir parça embedding modelleri kullanılarak sayısal vektörlere dönüştürülür.
+Bu vektörler, metinlerin anlamsal içeriğini temsil eder.
+
+Üçüncü adımda, elde edilen embedding’ler vektör tabanlı bir veritabanında saklanır.
+FAISS gibi vektör veritabanları, anlamsal benzerliğe dayalı hızlı arama yapılmasına olanak tanır.
+Geleneksel ilişkisel veritabanları metinler arasındaki anlamsal benzerliği hesaplayamazken, vektör veritabanları bu konuda oldukça etkilidir.
+
+Son adımda ise kullanıcıdan gelen soru embedding’e dönüştürülür ve veritabanında en benzer doküman parçaları bulunur.
+Bu parçalar, dil modeline bağlam (context) olarak verilerek cevap üretilmesi sağlanır.
+
+RAG yaklaşımı halüsinasyon problemini önemli ölçüde azaltmasına rağmen, tek başına yeterli olmayabilir.
+Model, getirilen dokümanlara yalnızca kısmen dayanan veya bağlam dışı ek bilgiler içeren cevaplar üretebilir.
+Bu nedenle, üretilen cevapların güvenilirliğini ölçmek için ek denetim mekanizmalarına ihtiyaç vardır.
+
+Bu projede, RAG tabanlı bir sistemin üzerine bir “kanıt skoru” (evidence score) mekanizması eklenmiştir.
+Bu mekanizma, dil modelinin ürettiği cevabı, kullanılan bağlam ile karşılaştırarak cevabın ne ölçüde desteklendiğini değerlendirmektedir.
+Elde edilen skor, cevabın güvenilirliğini nicel olarak ifade etmeyi amaçlamaktadır.
+
+Sonuç olarak, bu çalışma LLM tabanlı sistemlerde halüsinasyon problemini ele almakta ve dokümana dayalı, daha güvenli ve şeffaf bir cevap üretim süreci sunmaktadır.
+Amaç, yalnızca akıcı cevaplar üretmek değil, aynı zamanda bu cevapların doğrulanabilir ve ölçülebilir olmasını sağlamaktır.
